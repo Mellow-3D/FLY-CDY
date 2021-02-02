@@ -8,7 +8,7 @@ There are 2 methods that can be employed to fix this issue.
 
 Rather then installing the jumper for UART mode as described above, install it as shown in the image below.  
 
-![cdy_jumper_fix](/fly_cdy_fix.jpg)
+![cdy_jumper_fix](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/fly_cdy_fix.jpg)
 
 Then include the following line in the board.txt file.  
 ```
@@ -22,21 +22,20 @@ This involves updating the bootloader on the Fly-CDY and required a [USB TTL dev
 Ensure the power is disconnected from your Fly-CDY, although ideally, this should be done with nothing else connected to the board (especially high drain items such as a screen).  
 Connect the USB TTL to the Fly-CDY.  
 
-|:---|:---|
 |TTL|CDY|
+|:---|:---|
 |+5V|+5V|
 |GND|GND|
 |RX|TX|
 |TX|RX|
 
-
-![cdy_jumper_fix2](/fly_cdy_fix2.jpg)
+![cdy_jumper_fix2](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/fly_cdy_fix2.jpg)
 
 Download and install [Flash Magic](https://www.flashmagictool.com/download.html&d=10.90/FlashMagic.exe).  
 Download and install the updated bootloader from here.  
 Launch flash magic. 
 
-![flash_magic](/flash_magic.png)
+![flash_magic](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/flash_magic.png)
 
 As shown above, instep 1 select LPC1769 in the first box, the COM port should be the COM port of your Fly-CDY board and set the baudrate to 38400.  
 In step 2, make sure "Erase all..." is unticked and "Erase blocks..." is ticked.  
